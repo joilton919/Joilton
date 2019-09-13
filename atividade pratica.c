@@ -4,15 +4,15 @@
 #include <math.h>
 
 //Definindo variáveis globais para serem usadas nas funções a seguir.
-int a1, a2, a3, media;
+int v1, v2, v3, media;
 float N1, N2, MED, R;
 
 void verifica() //Função da Questão 2
 {
   printf("Digite um numero para saber se ele eh par ou impar: ");
-  scanf("%d", &a1);
+  scanf("%d", &v1);
 
-  if(a1 % 2 == 0)
+  if(v1 % 2 == 0)
     printf("numero par\n");
 
   else
@@ -26,9 +26,9 @@ void potencia() //Função da Questão 3
   scanf("%f", &N1);
 
   printf("Digite o expoente da potencializacao: ");
-  scanf("%d", &a1);
+  scanf("%d", &v1);
 
-  R = pow(N1, a1);
+  R = pow(N1, v1);
 
   printf("Resultado em forma cientifica: %.2e\n", R);
 
@@ -40,9 +40,9 @@ void raiz() //Função da Questão 4
   scanf("%f", &N1);
 
   printf("Digite o tipo da raiz: ");
-  scanf("%d", &a1);
+  scanf("%d", &v1);
 
-  R = pow(N1, 1.0/a1);
+  R = pow(N1, 1.0/v1);
 
   printf("Resultado em forma cientifica: %.2e\n", R);
 
@@ -51,9 +51,9 @@ void raiz() //Função da Questão 4
 void bissexto() //Função da Questão 5
 {
   printf("Digite o ano para saber se ele eh bissexto ou nao: ");
-  scanf("%d", &a1);
+  scanf("%d", &v1);
 
-  if (a1 % 4 == 0)
+  if (v1 % 4 == 0)
     printf("Ano bissexto!\n");
 
   else
@@ -65,9 +65,9 @@ void bissexto() //Função da Questão 5
 void media_ponderada() //Função da Questão 6
 {
   printf("Digite 3 notas (de 0 a 100) para calcular sua media ponderada:\n");
-  scanf("%d %d %d", &a1, &a2, &a3);
+  scanf("%d %d %d", &v1, &v2, &v3);
 
-  media = (1*a1 + 1*a2 + 2*a3) / (1 + 1 + 2);
+  media = (1*v1 + 1*v2 + 2*v3) / (1 + 1 + 2);
 
   printf("Sua media eh: %d\n", media);
 
@@ -95,9 +95,9 @@ void matricula() //Função da Questão 8
 {
   printf("Meu nome: Joao Vinicius Belo Barbosa\n");
 
-  a1 = 1910026157;
+  v1 = 1910026157;
 
-  printf("minha matricula em hexadecimal: %X\n", a1);
+  printf("minha matricula em hexadecimal: %X\n", v1);
 
 }
 
